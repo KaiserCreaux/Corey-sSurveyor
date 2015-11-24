@@ -1,0 +1,22 @@
+#panel {
+    font-family: "Vollkorn", Serif;
+    padding: 30px;
+    display: none;
+    background-color: #0072B4;
+    color: #fff;
+    border: solid 1px #c3c3c3;
+    position:fixed;
+    right:10%;
+    bottom:0px;
+    height:210px;
+    width:250px;
+}
+.q2 {
+    display:none;
+}
+form#feedback input {
+    margin-left: 10px;
+}
+.thankyou {
+    display:none;
+}

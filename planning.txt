@@ -1,0 +1,37 @@
+Req--
+
+1) add questions and list of answers
+
+    a) Model will be JSON
+    b) Add / edit questions by editing array
+    c) Array of the format something like:
+
+        var surveyQuestions = [
+            {"question":"Why did you visit today?", 
+             "answer":[
+                "To find Power Consumption for a device",
+                "Learn about Energy Efficiency",
+                "Find Energy Efficient Device",
+                "Other"
+            ]},
+            {"question":"What would you like to see?", 
+             "answer":[
+                "something else",
+                "more stuff",
+                "yep",
+                "Other"
+            ]},
+        ];
+    
+    d) Adding another 2nd-tier item to the array, consisting of a "question" and an "answer" will automatically add a new page to the questionnaire
+
+2) display questions and answers in series
+
+    a) display function iterates through surveyQuestions array when a survey page is requested
+    b) Each page displays question and answes from i position in the array
+    c) the display builds the view with each answer calling a function to add their value to a specific position in a surveyAnswer array, then it steps i
+
+3) upon completion of quiz, submit data to Google analytics
+
+11/23 goal--get 1) and 2) working!
+
